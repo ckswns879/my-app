@@ -12,7 +12,6 @@ import './App.css';
 // 2. 외부 파일에 적는방법
 // 3. 라이브러리사용 (부트스트랩, componet-styled)
 
-
 let a = 10; //변수
 const b = 20; //상수
 
