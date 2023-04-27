@@ -15,6 +15,7 @@ import './App.css';
 let a = 10; //변수
 const b = 20; //상수
 
+
 function App() {
   let c; 
   console.log(1,c); //변수는있는데 값이없어서 undefined라고출력됨 *java = null 과 비슷
