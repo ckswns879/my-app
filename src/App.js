@@ -12,6 +12,7 @@ import './App.css';
 // 2. 외부 파일에 적는방법
 // 3. 라이브러리사용 (부트스트랩, componet-styled)
 
+
 let a = 10; //변수
 const b = 20; //상수
 
@@ -22,10 +23,12 @@ function App() {
 
   const mystyle = {color:'red'};
   return (
+    
 <div>
 <div style={mystyle}>if 사용 불가능 / 삼항연산자(조건 ? 값(true) : 값(false)) ex) {a === 10 ? '10입니다' : '10이아님니다'}</div> {/* css디자인 1.내부에는방법 */}
 <h1 className='css2'>조건부렌더링 ex) {b === 20 && '20입니다.'}, {b === 10 && '20입니다.'}   {/*false라 출력안됨*/}</h1>
 </div>
+
   );
 }
 
