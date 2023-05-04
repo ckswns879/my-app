@@ -4,7 +4,7 @@ function App2() {
   return (
   <>
     <div>{list[0]}</div>
-  <div>{list.map((n) =><h1>{n}</h1>)}</div>
+    <div>{list.map((n) =><h1>{n}</h1>)}</div>
 </>
 );
 
