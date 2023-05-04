@@ -7,6 +7,7 @@ function App2() {
   <div>{list.map((n) =><h1>{n}</h1>)}</div>
 </>
 );
+
 }
 
 export default App2;
