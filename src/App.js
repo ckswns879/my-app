@@ -4,6 +4,7 @@ import './App.css';
 // 실행과정 (index.html) - spa single page application
 // jsx문법 html과 유샤한구조를 갖고 있어 사용하기 간편하다
 
+
 // react는 하나의DOm만 리턴함
 // 변수선언은 let 혹은 const로만 해야함        let은 변수 const는 상수
 // if 사용 불가능 -> 삼항연산자(조건 ? 값(true) : 값(false))
