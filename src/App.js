@@ -1,5 +1,6 @@
 import './App.css';
 
+
 // 실행과정 (index.html) - spa single page application
 // jsx문법 html과 유샤한구조를 갖고 있어 사용하기 간편하다
 
