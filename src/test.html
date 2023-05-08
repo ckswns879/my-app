@@ -41,12 +41,29 @@
     //    console.log(a5[i]);
     //}
 
-    //a5.forEach((n) => {console.log(n);}) //리턴못함
+    //a5.forEach((n) => {console.log(n);}) //실행만하고 리턴못함
 
     const b5 = a5.map((n) => n); // 가공가능
     const c5 = a5.map((n) => n+10); //+10으로 가공
     console.log(b5);
     console.log(c5);
+
+    console.log("5.==========값 바꾸기"); 
+    
+    const users = [
+    {id:1, name:"kim", phone:"1111"},
+    {id:2, name:"han", phone:"2222"},
+    {id:3, name:"lee", phone:"3333"}]
+    console.log(users);
+    const a6 = {id:1,name:"kim",phone:"1111"};
+    const b6 = {...a6,name:"홍길동",phone:"010"};
+    console.log(b6);
+
+    console.log("5-1.==========특정값 바꾸기"); 
+    const updateusers = {id:2,name:"이순신"};  // 기존데이터는 그대로 두고 특정 값만바꿀때 사용
+    const  newusers = users.map(users => users.id === updateusers.id ? {...users,...updateusers}:users);
+    console.log("newusers", newusers);
+
 </script>
 </body>
 </html>
