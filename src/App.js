@@ -1,7 +1,9 @@
 import './App.css';
 
+
 // 실행과정 (index.html) - spa single page application
 // jsx문법 html과 유샤한구조를 갖고 있어 사용하기 간편하다
+
 
 // react는 하나의DOm만 리턴함
 // 변수선언은 let 혹은 const로만 해야함        let은 변수 const는 상수
@@ -18,6 +20,7 @@ const b = 20; //상수
 
 
 function App() {
+  
   let c; 
   console.log(1,c); //변수는있는데 값이없어서 undefined라고출력됨 *java = null 과 비슷
 

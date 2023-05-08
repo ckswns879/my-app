@@ -14,6 +14,7 @@
     console.log(`a의 값은 : ${a}`) //1,2,3
     console.log(`b의 값은 : ${b}`) //1,2,3,4
     
+    
     console.log("2.==========추가하기concat");
     const a2 = [1,2,3];
     const b2 = a2.concat(4); //concat은 끝에추가 가능
@@ -23,10 +24,12 @@
     const c2 = [0,...a2,4]; //전개연산자는 처음과 끝 둘다가능
     console.log(`c2의 값은 : ${c2}`) //1,2,3,4
 
+    
     console.log("3.==========걸러내기filter"); //삭제하기
     const a3 = [1,2,3];
     const b3 = a3.filter((n)=>{return n != 1}); // boolean을 retrun받는다 -> true만 걸러낸다
     console.log(`b3의 값은 : ${b3}`); // 2,3
+    
     
     console.log("4.==========잘라내기");
     const a4 = [1,2,3];
@@ -35,6 +38,7 @@
     const c4 = [...a4.slice(0,2),4,...a4.slice(2,3)];
     console.log(`c4의 값은 : ${c4}`); // 1,2,4,3
 
+    
     console.log("5.==========반복하기");
     const a5 = [1,2,3];
     //for(let i = 0; i<a5.length; i++){
