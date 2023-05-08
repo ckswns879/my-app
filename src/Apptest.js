@@ -1,5 +1,5 @@
 
-function App2() {
+function Apptest() {
   let list = [1,2,3];
   return (
   <>
@@ -10,4 +10,4 @@ function App2() {
 
 }
 
-export default App2;
+export default Apptest;
