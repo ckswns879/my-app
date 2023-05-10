@@ -12,5 +12,4 @@ const Sub = () => {
         </div>
     );
 };
-
 export default Sub;
