@@ -2,7 +2,6 @@ import { useState } from "react";
 import Sub from "./Sub";
 
 
-
 function UseState() {
 
 //let number = 1; // 이렇게 하면 상태값 아님
