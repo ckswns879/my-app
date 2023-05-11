@@ -24,6 +24,7 @@ const download = () => {
     setNum(num+1); // 재랜더링마다 +1 //...sample는 변경x
 };
 
+    
 // 랜더링 시점 = 상태값 변경
     return (
         <div>
