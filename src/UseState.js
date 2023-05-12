@@ -10,6 +10,7 @@ const add = () => {
 setNumber(number+1); // 리엑트한테 number 값 변경한다고 요청 number++는안됨
 console.log('add',number);
 };
+    
 // 랜더링 시점 = 상태값이 변경될때
 return (
 <>
