@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+// rsc입력시 기본틀을 자동으로 만들어줌(확장자설치)
 // function Sub() {} 이거랑같음
 const Sub = () => {
 
