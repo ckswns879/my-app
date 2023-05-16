@@ -12,6 +12,7 @@ let sample =[
     {id:4, name:"이순신"},
 ];
 
+    
 const [users, setUsers] = useState(sample); // 래퍼런스가 변경되야 실행함
 
 const download = () => {
@@ -24,6 +25,8 @@ const download = () => {
     setNum(num+1); // 재랜더링마다 +1 //...sample는 변경x
 };
 
+    
+    
 // 랜더링 시점 = 상태값 변경
     return (
         <div>
