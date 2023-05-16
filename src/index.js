@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
+import UseEffect from './UseEffect';
 //import UseState from './UseState';
-import UseStateTest from './UseStateTest';
+//import UseStateTest from './UseStateTest';
 //import Apptest from './Apptest';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,7 +14,8 @@ root.render(
     {/* <App /> */}
     {/* <Apptest /> */}
     {/* <UseState /> */}
-    <UseStateTest />
+    {/* <UseStateTest /> */}
+    <UseEffect />
   </React.StrictMode>
 );
 
