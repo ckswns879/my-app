@@ -24,13 +24,13 @@ download();
 // [] <<어디에도 의존하지 않음(최초 한번만 실행)
 
 useEffect(() => {
-console.log("useEffect실행됨")
+console.log("serch에의존한 useEffect 실행됨")
 download();
 },[serch]) // serch에 의존해서 useEffect()함수를 실행함//download(5)로 돌아감
 
     return (
         <div>
-            <button onClick={() => {setSerch(2);}}>검색하기</button>
+        <button onClick={() => {setSerch(2);}}>검색하기</button>
         <h1>데이터{data}</h1>
         <button onClick={() => {setData(data + 1);}}>더하기</button>
         </div>
