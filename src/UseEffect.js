@@ -11,7 +11,6 @@ let downloadData = 5;// 가정
 setData(downloadData);
 };
 
-
 // 실행시점 
 // 1. UseEffect()함수가 최초 실행될 때(그림이 최도로 그려질 때)
 // 2. 상태변수가 변경될때(그게 dependencyList에 등록되어 있어야함 //[]< 이거안에)
