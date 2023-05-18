@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
-import UseEffect from './UseEffect';
+import UseMemo from './UseMemo';
+//import UseEffect from './UseEffect';
 //import UseState from './UseState';
 //import UseStateTest from './UseStateTest';
 //import Apptest from './Apptest';
@@ -15,7 +16,8 @@ root.render(
     {/* <Apptest /> */}
     {/* <UseState /> */}
     {/* <UseStateTest /> */}
-    <UseEffect />
+    {/* <UseEffect /> */}
+    <UseMemo />
   </React.StrictMode>
 );
 
