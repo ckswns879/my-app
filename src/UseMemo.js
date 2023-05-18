@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 
-function UseMemo() { //useMemo를 사용하면, 특정 값이나 함수를 이전에 계산한 결과를 재사용할 수 있습니다. 이를 통해 불필요한 계산을 피하고, 컴포넌트의 렌더링 성능을 향상시킬 수 있습니다.
+function UseMemo() { 
+//useMemo를 사용하면, 특정 값이나 함수를 이전에 계산한 결과를 재사용할 수 있습니다. 이를 통해 불필요한 계산을 피하고, 컴포넌트의 렌더링 성능을 향상시킬 수 있습니다.
 
 const [list,setList] = useState([1,2,3,4]);
 const [str,setStr] = useState('합계');
