@@ -10,6 +10,7 @@ const [list, setList] = useState(
     [{id:1, name: '홍길동'},
     {id:2, name: '이순신'},]);
 
+    
 const myRefs = Array.from({length: list.length}).map(()=> createRef()); // 배열로만들기
     
     return (
