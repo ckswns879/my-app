@@ -14,6 +14,7 @@ const [list, setList] = useState(
 const myRefs = Array.from({length: list.length}).map(()=> createRef()); // 배열로만들기
     
     return (
+        
         <>
         <button onClick={()=>{
             console.log(myRef);
