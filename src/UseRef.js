@@ -4,15 +4,17 @@ import React, { createRef, useRef, useState } from 'react';
 
 const UseRef = () => {
 
-const myRef = useRef(null); //이렇게만들면 한개만적용
+const myRef = useRef(null); // 이렇게 만들면 한개만적용
 
 const [list, setList] = useState(
     [{id:1, name: '홍길동'},
     {id:2, name: '이순신'},]);
 
-const myRefs = Array.from({length: list.length}).map(()=> createRef()); // 배열로만들기
+   
+const myRefs = Array.from({length: list.length}).map(()=> createRef()); // 배열로 만들기
     
     return (
+       
         <>
         <button onClick={()=>{
             console.log(myRef);
