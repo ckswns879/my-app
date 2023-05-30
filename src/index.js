@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
-import UseRef from './UseRef';
+// import UseRef from './UseRef';
 //import UseMemo from './UseMemo';
 //import UseEffect from './UseEffect';
 //import UseState from './UseState';
 //import UseStateTest from './UseStateTest';
 //import Apptest from './Apptest';
+import ComponentsStyle from './Components_Style';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,7 +20,8 @@ root.render(
     {/* <UseStateTest /> */}
     {/* <UseEffect /> */}
     {/* <UseMemo /> */}
-    <UseRef />
+    {/* <UseRef /> */}
+    <ComponentsStyle />
   </React.StrictMode>
 );
 
