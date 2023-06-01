@@ -1,5 +1,6 @@
 import './App.css';
-import LoginPages from './pages/LoginPages';
+import HomePage from './pages/HomePage';
+//import LoginPages from './pages/LoginPages';
 // import UseRef from './UseRef';
 // import UseMemo from './UseMemo';
 // import UseEffect from './UseEffect';
@@ -20,7 +21,8 @@ function App() {
     {/* <UseMemo /> */}
     {/* <UseRef /> */}
     {/* <ComponentsStyle /> */}
-    <LoginPages />
+    {/* <LoginPages /> */}
+    <HomePage />
     </div>
 
   );
