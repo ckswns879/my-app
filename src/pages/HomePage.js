@@ -8,7 +8,7 @@ const HomePage = () => {
 
 // http요청 (fetch, axios(다운))
 const [boards, setBoards] = useState([]);
-
+const [number, setNumber] = useState(0);
 // 빈 배열은 최초 한번만 실행
 useEffect(() => {
 // 다운로드가정  = fetch(),axios(), ajax()
@@ -21,12 +21,16 @@ let data = [
 setBoards([...data]);
 },[]);
 
+useEffect(() => {
+    setNumber(0);
+},[]);
+
 // props // boards={boards}  {boards}는 상태 데이터만가능
 // setboards 함수를 패싱해서 자식(Home.js)에게넘김
     return (
         <div>
             <Header />
-            <Home boards={boards} setBoards={setBoards} />
+            <Home boards={boards} setBoards={setBoards} number={number} setNumber={setNumber}/>
             <Footer />
         </div>
     );
