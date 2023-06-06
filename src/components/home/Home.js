@@ -6,6 +6,7 @@ import React from 'react';
 const Home = (props) => {
 
     
+    
     // 구조분할 할당
     const {boards, setBoards, number, setNumber} = props;
     return (
