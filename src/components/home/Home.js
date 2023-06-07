@@ -4,7 +4,7 @@ import React from 'react';
 // Function 방식
 // class 방식
 const Home = (props) => {
-
+    
     
     // 구조분할 할당
     const {boards, setBoards, number, setNumber} = props;
