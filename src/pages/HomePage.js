@@ -9,6 +9,7 @@ const HomePage = () => {
 // http요청 (fetch, axios(다운))
 const [boards, setBoards] = useState([]);
 const [number, setNumber] = useState(0);
+const [user, setUser] = useState({});
 // 빈 배열은 최초 한번만 실행
 useEffect(() => {
 // 다운로드가정  = fetch(),axios(), ajax()
@@ -19,6 +20,7 @@ let data = [
 ];
 
 setBoards([...data]);
+setUser({ id : 1, username:'ssar'});
 },[]);
 
 useEffect(() => {
@@ -30,7 +32,7 @@ useEffect(() => {
     return (
         <div>
             <Header />
-            <Home boards={boards} setBoards={setBoards} number={number} setNumber={setNumber}/>
+            <Home boards={boards} setBoards={setBoards} number={number} setNumber={setNumber} user={user}/>
             <Footer />
         </div>
     );
