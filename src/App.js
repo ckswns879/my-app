@@ -1,5 +1,9 @@
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
+import Header from './components/Header';
 import HomePage from './pages/HomePage';
+import LoginPages from './pages/LoginPages';
 //import LoginPages from './pages/LoginPages';
 // import UseRef from './UseRef';
 // import UseMemo from './UseMemo';
@@ -19,10 +23,17 @@ function App() {
     {/* <UseStateTest /> */}
     {/* <UseEffect /> */}
     {/* <UseMemo /> */}
+
     {/* <UseRef /> */}
     {/* <ComponentsStyle /> */}
     {/* <LoginPages /> */}
-    <HomePage />
+
+    <Header />
+    <Routes>
+    <Route path="/" exact={true} component={<HomePage />} /> {/* exact={true}는 경로가 정확히 일치해야만 해당 라우트가 활성화되는 옵션 */}
+    <Route path="/login" exact={true} component={<LoginPages />} />
+    </Routes>
+    <Footer />
     </div>
 
   );
