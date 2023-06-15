@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const HeaderList = styled.div`
@@ -10,8 +11,12 @@ const Header = () => {
     return (
         <HeaderList>
             <ul>
-                <li>메뉴 1</li>
-                <li>메뉴 2</li>
+                <li>
+                    <Link to="/">홈페이지</Link>
+                </li>
+                <li>
+                <Link to="/login">로그인페이지</Link>
+                </li>
             </ul>
         </HeaderList>
     );
