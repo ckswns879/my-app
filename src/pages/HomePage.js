@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+// import Header from '../components/Header';
+// import Footer from '../components/Footer';
 import Home from '../components/home/Home';
 
 
@@ -29,13 +29,17 @@ useEffect(() => {
 
 // props // boards={boards}  {boards}는 상태 데이터만가능
 // setboards 함수를 패싱해서 자식(Home.js)에게넘김
-    return (
-        <div>
-            <Header />
-            <Home boards={boards} setBoards={setBoards} number={number} setNumber={setNumber} user={user}/>
-            <Footer />
-        </div>
-    );
+//     return (
+//         <div>
+//             <Header />
+//             <Home boards={boards} setBoards={setBoards} number={number} setNumber={setNumber} user={user}/>
+//             <Footer />
+//         </div>
+//     );
+// };
+
+//라우팅하기(홈페이지)
+return <Home boards={boards} setBoards={setBoards} number={number} setNumber={setNumber} user={user}/>
 };
 
 export default HomePage;
