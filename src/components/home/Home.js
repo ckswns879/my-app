@@ -22,8 +22,8 @@ const Home = (props) => {
         <div>
             <h1>홈 : {number}</h1>
             <StyledAddButton user={user} onClick={(e) => setNumber(number +1)}>번호증가</StyledAddButton>
-            <StyledDeleteButton user={user} onClick={() => setBoards([])}>전체삭제</StyledDeleteButton>
-            {boards.map((board) => <h3>제목 : {board.title} 내용 : {board.contant}</h3>)}
+            <StyledDeleteButton user={user} onClick={() => setBoards([])} >전체삭제</StyledDeleteButton>
+            {boards.map((board) => (<h3 key={board.id}>제목 : {board.title} 내용 : {board.contant}</h3>))}
         </div>
     );
 };
