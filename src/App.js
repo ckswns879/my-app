@@ -30,8 +30,8 @@ function App() {
 
     <Header />
     <Routes>
-    <Route path="/" exact={true} component={<HomePage />} /> {/* exact={true}는 경로가 정확히 일치해야만 해당 라우트가 활성화되는 옵션 */}
-    <Route path="/login" exact={true} component={<LoginPages />} />
+    <Route path="/" exact={true} element={<HomePage />} /> {/* exact={true}는 경로가 정확히 일치해야만 해당 라우트가 활성화되는 옵션 */}
+    <Route path="/login" exact={true} element={<LoginPages />} />
     </Routes>
     <Footer />
     </div>
