@@ -19,22 +19,26 @@ const location = useLocation();
 const { id } = useParams();
 
 console.log('LoginPage', {
-history: navigate,
-location,
+    history: navigate,
+    location,
 })
 console.log('LoginPage', {
-id,
+    id,
 });
 
 const handleGoBack = () => {
-navigate(-1); // 한칸 뒤로 가기
+    navigate(-1); // 한칸 뒤로 가기
 };
+const handlePush = () => {
+    navigate('/HomePage'); //원하는 페이지로가기
+  };
 
 // 라우팅하기(로그인페이지)
 return (
     <>
         <Login />
         <button onClick={handleGoBack}>뒤로 가기</button>
+        <button onClick={handlePush}>홈페이지로</button>
     </>
     );
 };
