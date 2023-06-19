@@ -15,7 +15,7 @@ const Header = () => {
                     <Link to="/">홈페이지</Link>
                 </li>
                 <li>
-                <Link to="/login">로그인페이지</Link>
+                <Link to="/login/10">로그인페이지</Link>
                 </li>
             </ul>
         </HeaderList>
