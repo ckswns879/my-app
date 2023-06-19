@@ -2,9 +2,9 @@ import React from 'react';
 // import Header from '../components/Header';
 // import Footer from '../components/Footer';
 import Login from '../components/login/Login';
+import { useNavigate, useLocation, useParams } from 'react-router-dom';
 
-
-const LoginPages = () => {
+const LoginPages = (props) => {
 //     return (
 //         <div>
 //             <Header />
@@ -14,7 +14,28 @@ const LoginPages = () => {
 //     );
 // };
 
+const navigate = useNavigate();
+const location = useLocation();
+const { id } = useParams();
+
+console.log('LoginPage', {
+history: navigate,
+location,
+})
+console.log('LoginPage', {
+id,
+});
+
+const handleGoBack = () => {
+navigate(-1); // 한칸 뒤로 가기
+};
+
 // 라우팅하기(로그인페이지)
-return <Login />
+return (
+    <>
+        <Login />
+        <button onClick={handleGoBack}>뒤로 가기</button>
+    </>
+    );
 };
 export default LoginPages;
