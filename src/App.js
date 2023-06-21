@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import LoginPages from './pages/LoginPages';
+import 'bootstrap/dist/css/bootstrap.min.css';    //bootstrap import
 //import LoginPages from './pages/LoginPages';
 // import UseRef from './UseRef';
 // import UseMemo from './UseMemo';
